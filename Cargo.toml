@@ -1,0 +1,16 @@
+[package]
+name = "webrogue_web"
+version = "0.1.0"
+edition = "2021"
+
+[lib]
+crate-type = ["staticlib"]
+
+[dependencies]
+webrogue_runtime = { path = "external/webrogue_rs/crates/runtime" }
+# webrogue_backend_wasm3 = { path = "external/webrogue_rs/crates/backend_wasm3" }
+webrogue_wasi_sync = { path = "external/webrogue_rs/crates/wasi_sync" }
+webrogue_std_stream_sdl = { path = "external/webrogue_rs/crates/std_stream_sdl", default-features = false }
+webrogue_backend_web = { path = "crates/backend" }
+anyhow = { version = "1" }
+

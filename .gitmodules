@@ -1,0 +1,3 @@
+[submodule "external/webrogue_rs"]
+	path = external/webrogue_rs
+	url = https://github.com/webrogue-runtime/webrogue_rs.git
